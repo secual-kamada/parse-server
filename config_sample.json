@@ -1,0 +1,43 @@
+{
+  "databaseURI": "mongodb://10.0.0.4/secual",
+  "serverURL": "http://10.0.0.8",
+  "appId": "appid",
+  "masterKey": "masterKey",
+  "clientKey": "clientKey",
+  "restAPIKey": "restAPIKey",
+  "port": 1337,
+  "verbose": false,
+  "silent" : true,
+  "push":{
+    "android": {
+     "senderId": "senderId" ,
+     "apiKey": "apiKey"
+    },
+    "ios": [
+      {
+        "pfx": "/home/secual/tmp/apns/nopass/secualinc_dev_nopass.p12",
+        "bundleId": "com.secualinc.Secual",
+        "passphrase": "",
+        "production": false
+      },
+      {
+        "pfx": "/home/secual/tmp/apns/nopass/secualinc_pro_nopass.p12",
+        "bundleId": "com.secualinc.Secual",
+        "passphrase": "",
+        "production": true
+      },
+      {
+        "pfx": "/home/secual/tmp/apns/nopass/getsecual_pro_nopass.p12",
+        "bundleId": "com.getsecual.Secual",
+        "passphrase": "",
+        "production": true
+      },
+      {
+        "pfx": "/home/secual/tmp/apns/nopass/getsecual_dev_nopass.p12",
+        "bundleId": "com.getsecual.Secual",
+        "passphrase": "",
+        "production": false
+      }
+    ]
+  }
+}
